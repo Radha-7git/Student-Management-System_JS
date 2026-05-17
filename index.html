@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Student Management System</h1>
+            <p>Manage your students efficiently</p>
+        </header>
+
+        <main class="dashboard-grid">
+            <section class="form-section glass-panel">
+                <h2><span id="form-title">Add New Student</span></h2>
+                <form id="student-form">
+                    <input type="hidden" id="student-id">
+                    
+                    <div class="form-group">
+                        <label for="student-name">Student Name</label>
+                        <input type="text" id="student-name" placeholder="Enter full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-department">Department</label>
+                        <input type="text" id="student-department" placeholder="e.g. Computer Science" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-marks">Marks</label>
+                        <input type="number" id="student-marks" placeholder="Enter marks (0-100)" min="0" max="100" required>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="primary-btn">Add Student</button>
+                    <button type="button" id="cancel-edit-btn" class="secondary-btn hidden">Cancel</button>
+                </form>
+            </section>
+
+            <section class="list-section glass-panel">
+                <div class="controls-bar">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search by name...">
+                    </div>
+                    
+                    <div class="sort-box">
+                        <select id="sort-select">
+                            <option value="default">Sort by</option>
+                            <option value="marks-desc">Highest Marks</option>
+                            <option value="marks-asc">Lowest Marks</option>
+                        </select>
+                    </div>
+                    
+                    <div class="stats-box">
+                        <span class="stat-badge">Total Students: <strong id="total-count">0</strong></span>
+                    </div>
+                </div>
+
+                <div id="alert-container"></div>
+
+                <div class="students-container" id="students-container">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
