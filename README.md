@@ -31,9 +31,9 @@ Try out the live demo: [Student Management System Demo](#)
 
 ## Technologies Used
 
-- **JavaScript** (39.4%) — core application logic
-- **CSS** (42.6%) — modern, responsive user interface
-- **HTML** (18%) — semantic structure
+- **JavaScript** — core application logic
+- **CSS** — modern, responsive user interface
+- **HTML** — semantic structure
 
 ## Folder Structure
 
@@ -47,11 +47,5 @@ Student-Management-System_JS/
 └── README.md         # Documentation
 ```
 
-## Contributing
-
-Contributions are welcome!  
-If you’d like to report a bug, request a feature, or submit a pull request, please [open an issue](https://github.com/Radha-7git/Student-Management-System_JS/issues).
-
----
 
 **Made with ♥ by [Radha-7git](https://github.com/Radha-7git)**
